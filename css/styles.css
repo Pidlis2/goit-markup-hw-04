@@ -171,10 +171,23 @@ header {
 .active {
   color: var(--button-accent-color);
 }
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--button-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+}
 /*==========end header====*/
 
 /*=========hero===========*/
 .hero-section {
+  background-image: url(/images/hero/Img.jpg),linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4));
+  background-size: cover;
+  
   background-color: var(--first-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -231,21 +244,28 @@ header {
   line-height: 1.71;
   color: var(--secondary_color-txt);
   letter-spacing: 0.03em;
-  
 }
 .our-work{
   display: flex;
   margin-left: -30px;
-
-  
 }
-
-
 .our-work-item{
 flex-basis: calc(100% / 4 - 30px);
  margin-left: var(--seсondary-retreat); 
 }
-
+.our-work__svg-list {
+  display: flex;
+}
+.our-work__svg-wrap {
+width: 270px;
+height: 120px;
+background: var(--secondary-bg-color);
+border-radius: 4px;
+margin-bottom: var(--seсondary-retreat);
+}
+.our-work__svg-wrap:not(:first-child){
+  margin-left: var(--seсondary-retreat);
+}
 /*====end our work=========*/
 
 /*====what we do section===*/
