@@ -14,6 +14,7 @@
   --first-bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
   --button-accent-color: #2196f3;
+  
   /*========================*/
 
 /*=======margins and paddings===*/
@@ -98,6 +99,34 @@ body {
   padding-top: var(--main-retreat);
   padding-bottom: var(--main-retreat);
 }
+.social-list{
+  display: flex;
+  padding: 0px 30px;
+  justify-content: space-between;
+
+
+}
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.social-link:focus,
+.social-link:hover{
+  background-color: var(--button-accent-color);
+}
+.social-icon{
+  fill: var(--secondary_color-txt);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+fill: var(--third_color-txt);
+}
+
 /*=========logo==========*/
 .logo {
   color: inherit;
@@ -165,7 +194,14 @@ header {
 .mail-inf-link:focus,
 .tel-inf-link:hover,
 .tel-inf-link:focus {
-  color: #2196f3;
+  color: var(--button-accent-color);
+  
+}
+.mail-inf-link:hover .contact-inf__icon,
+.mail-inf-link:focus .contact-inf__icon,
+.tel-inf-link:focus .contact-inf__icon,
+.tel-inf-link:hover .contact-inf__icon{
+  fill: var(--button-accent-color);
 }
 
 .active {
@@ -181,6 +217,14 @@ header {
   border-radius: 2px;
 
 }
+.contact-inf__icon{
+  vertical-align: middle;
+  margin-right: 10px;
+  fill:var(--secondary_color-txt);
+  
+}
+  
+
 /*==========end header====*/
 
 /*=========hero===========*/
@@ -257,15 +301,20 @@ flex-basis: calc(100% / 4 - 30px);
   display: flex;
 }
 .our-work__svg-wrap {
+  display: flex;
 width: 270px;
 height: 120px;
 background: var(--secondary-bg-color);
 border-radius: 4px;
 margin-bottom: var(--seсondary-retreat);
+padding: 25px 100px;
 }
 .our-work__svg-wrap:not(:first-child){
   margin-left: var(--seсondary-retreat);
 }
+
+
+
 /*====end our work=========*/
 
 /*====what we do section===*/
