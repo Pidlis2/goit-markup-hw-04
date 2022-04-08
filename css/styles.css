@@ -72,9 +72,7 @@ address {
   letter-spacing: 0.03em;
 }
 .hero-section .container,
-.our-work-section .ourWork-title,
-.what-we-do-section .accent-title,
-.our-team-section .accent-title,
+.accent-title,
 .specialsts-card {
   text-align: center;
 }
@@ -95,7 +93,8 @@ body {
  
 }
 .our-team-section,
-.our-work-section {
+.our-work-section,
+.our-clients-section {
   padding-top: var(--main-retreat);
   padding-bottom: var(--main-retreat);
 }
@@ -119,11 +118,14 @@ body {
 .social-link:hover{
   background-color: var(--button-accent-color);
 }
-.social-icon{
+.social-icon,
+.our-clients-item{
   fill: var(--secondary_color-txt);
 }
 .social-link:hover .social-icon,
-.social-link:focus .social-icon{
+.social-link:focus .social-icon,
+.join-us__link:hover,
+.join-us__link:focus{
 fill: var(--third_color-txt);
 }
 
@@ -200,22 +202,15 @@ header {
 .mail-inf-link:hover .contact-inf__icon,
 .mail-inf-link:focus .contact-inf__icon,
 .tel-inf-link:focus .contact-inf__icon,
-.tel-inf-link:hover .contact-inf__icon{
+.tel-inf-link:hover .contact-inf__icon,
+.our-clients-item:focus,
+.our-clients-item:hover{
   fill: var(--button-accent-color);
+ border-color: var(--button-accent-color);
 }
 
 .active {
   color: var(--button-accent-color);
-}
-.nav-item::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--button-accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-
 }
 .contact-inf__icon{
   vertical-align: middle;
@@ -373,11 +368,34 @@ padding: 30px 0px;
 
 /*=======end our team=====*/
 
+/*=======our clients=======*/
+.our-clients-list{
+  display: flex;
+  justify-content: space-between;
+}
+.our-clients-item{
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*======our clients end=====*/
+
 /*=======footer===========*/
 .footer-section {
   background-color: var(--first-bg-color);
   padding: 60px 0px;
 }
+.footer-section .container{
+  display: flex;
+  align-items: baseline;
+}
+
 .container .logo-dark-theme{
   margin-bottom: 20px;
 }
@@ -398,6 +416,32 @@ padding: 30px 0px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.join-us__box-title{
+  text-transform: uppercase;
+  font-size: var(--main_font-size);
+  font-weight: var(--secondary_font-weight);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--third_color-txt);
+  margin-bottom: 4px;
+
+}
+.join-us__box{
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+.join-us__list{
+  display: flex;
+  justify-content: space-between;
+}
+.join-us__link{
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--third_color-txt);
+
+  
+}
+
 
 
 /*!!!!!!!!!Portfolio!!!!!!!*/
@@ -423,6 +467,9 @@ padding: 30px 0px;
 .products-button:focus {
   background-color: var(--button-accent-color);
   color: var(--third_color-txt);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .products-buttons-list{
   display: flex;
@@ -462,6 +509,12 @@ padding: 30px 0px;
   flex-basis: calc(100%/ 3 - 30px);
   margin-top: var(--seсondary-retreat);
 
+}
+.products-card-item:hover,
+.products-card-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-card-wrap{
   border: 1px solid #EEEEEE;
