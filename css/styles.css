@@ -121,7 +121,7 @@ outline: none;
 }
 .social-icon,
 .our-clients-item{
-  fill: var(--secondary_color-txt);
+  fill: #AFB1B8
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon,
