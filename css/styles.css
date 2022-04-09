@@ -117,6 +117,7 @@ body {
 .social-link:focus,
 .social-link:hover{
   background-color: var(--button-accent-color);
+outline: none;
 }
 .social-icon,
 .our-clients-item{
@@ -203,10 +204,11 @@ header {
 .mail-inf-link:focus .contact-inf__icon,
 .tel-inf-link:focus .contact-inf__icon,
 .tel-inf-link:hover .contact-inf__icon,
-.our-clients-item:focus,
-.our-clients-item:hover{
+.our-clients__link:hover,
+.our-clients__link:focus{
   fill: var(--button-accent-color);
  border-color: var(--button-accent-color);
+ outline: none;
 }
 
 .active {
@@ -373,7 +375,7 @@ padding: 30px 0px;
   display: flex;
   justify-content: space-between;
 }
-.our-clients-item{
+.our-clients__link{
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
